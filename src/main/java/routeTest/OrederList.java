@@ -30,14 +30,14 @@ public class OrederList extends HttpServlet {
 		try {
 			Class.forName(DButil.getDriverName());
 			Connection connection = DButil.getConnection();
-			PreparedStatement statement = connection.prepareStatement("SELECT * FROM order_list");
+			PreparedStatement statement = connection.prepareStatement("SELECT * FROM orderlist");
 			ResultSet rs = statement.executeQuery();
 
 			while (rs.next()) {
 				final int id = rs.getInt("id");
 				final String name = rs.getString("name");
 				final String size = rs.getString("size");
-				final String price = rs.getString("price");
+				final int price = rs.getInt("price");
 
 				teas.add(new Tea(id, name, size, price));
 			}

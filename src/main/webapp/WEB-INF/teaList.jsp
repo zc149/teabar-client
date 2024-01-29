@@ -9,7 +9,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 </head>
 <body>
-    <form action="http://192.168.45.241:8080/routeTest/tea/order" method="post">
+    <form action="insertOrder" method="post">
         <table>
             <tr>
                 <th>번호</th>

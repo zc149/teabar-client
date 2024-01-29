@@ -5,7 +5,7 @@ public class Tea {
 	private int id;
 	private String name;
 	private String size;
-	private String price;
+	private int price;
 	
 	public int getId() {
 		return id;
@@ -16,10 +16,10 @@ public class Tea {
 	public String getSize() {
 		return size;
 	}
-	public String getPrice() {
+	public int getPrice() {
 		return price;
 	}
-	public Tea(int id, String name, String size, String price) {
+	public Tea(int id, String name, String size, int price) {
 		this.id = id;
 		this.name = name;
 		this.size = size;

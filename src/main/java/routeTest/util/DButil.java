@@ -20,9 +20,9 @@ public class DButil {
 	
 		try {
 
-			final String DB_URL = "jdbc:mysql://192.168.45.241/"; // 교육장 IP로 수정해야함
+			final String DB_URL = "jdbc:mysql://192.168.0.170/"; // 교육장 IP로 수정해야함
 			final String DATABASE_NAME = "teabar";
-			final String USER = "guest2";
+			final String USER = "guest";
 			final String PASSWORD = "1234";
 			
 			return DriverManager.getConnection(DB_URL + DATABASE_NAME, USER, PASSWORD);
